@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["dijital_sarf|lib/anasayfa.dart","dijital_sarf|lib/sayfalar/harekeler.dart","dijital_sarf|lib/sayfalar/harfler.dart","dijital_sarf|lib/sayfalar/muhtelife.dart","flutter_web|lib/material.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":true}

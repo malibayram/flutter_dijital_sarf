@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flutter_web_ui|lib/ui.dart","dijital_sarf|lib/main.dart","flutter_web_ui|lib/src/engine.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":true}
