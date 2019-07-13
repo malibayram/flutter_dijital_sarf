@@ -1,0 +1,42 @@
+[
+  {
+    "family": "MaterialIcons",
+    "fonts": [
+      {
+        "asset": "fonts/MaterialIcons-Regular.ttf"
+      }
+    ]
+  },
+  {
+    "family": "Lateef",
+    "fonts": [
+      {
+        "asset": "fonts/Lateef/Lateef-Regular.ttf"
+      }
+    ]
+  },
+  {
+    "family": "Mirza",
+    "fonts": [
+      {
+        "asset": "fonts/Mirza/Mirza-Regular.ttf"
+      }
+    ]
+  },
+  {
+    "family": "Scheherazade",
+    "fonts": [
+      {
+        "asset": "fonts/Scheherazade/Scheherazade-Regular.ttf"
+      }
+    ]
+  },
+  {
+    "family": "GalleryIcons",
+    "fonts": [
+      {
+        "asset": "fonts/GalleryIcons.ttf"
+      }
+    ]
+  }
+]
