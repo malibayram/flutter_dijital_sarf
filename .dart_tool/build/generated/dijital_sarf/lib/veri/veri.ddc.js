@@ -8,6 +8,41 @@ define(['dart_sdk', 'packages/dijital_sarf/veri/kaliplar'], function(dart_sdk, k
   const veri__veri = Object.create(dart.library);
   const $_get = dartx._get;
   let JSArrayOfString = () => (JSArrayOfString = dart.constFn(_interceptors.JSArray$(core.String)))();
+  const _name$ = dart.privateName(veri__veri, "_name");
+  veri__veri.Kisim = class Kisim extends core.Object {
+    toString() {
+      return this[_name$];
+    }
+  };
+  (veri__veri.Kisim.new = function(index, _name) {
+    this.index = index;
+    this[_name$] = _name;
+    ;
+  }).prototype = veri__veri.Kisim.prototype;
+  dart.addTypeTests(veri__veri.Kisim);
+  dart.setLibraryUri(veri__veri.Kisim, "package:dijital_sarf/veri/veri.dart");
+  dart.setFieldSignature(veri__veri.Kisim, () => ({
+    __proto__: dart.getFields(veri__veri.Kisim.__proto__),
+    index: dart.finalFieldType(core.int),
+    [_name$]: dart.finalFieldType(core.String)
+  }));
+  dart.defineExtensionMethods(veri__veri.Kisim, ['toString']);
+  veri__veri.Kisim.SAHIH = dart.const(new veri__veri.Kisim.new(0, "Kisim.SAHIH"));
+  veri__veri.Kisim.MISAL = dart.const(new veri__veri.Kisim.new(1, "Kisim.MISAL"));
+  veri__veri.Kisim.ECVEF = dart.const(new veri__veri.Kisim.new(2, "Kisim.ECVEF"));
+  veri__veri.Kisim.NAKIS = dart.const(new veri__veri.Kisim.new(3, "Kisim.NAKIS"));
+  veri__veri.Kisim.LEFIFMKRN = dart.const(new veri__veri.Kisim.new(4, "Kisim.LEFIFMKRN"));
+  veri__veri.Kisim.LEFIFMFRK = dart.const(new veri__veri.Kisim.new(5, "Kisim.LEFIFMFRK"));
+  veri__veri.Kisim.MUDAAF = dart.const(new veri__veri.Kisim.new(6, "Kisim.MUDAAF"));
+  veri__veri.Kisim.MEHMUZF = dart.const(new veri__veri.Kisim.new(7, "Kisim.MEHMUZF"));
+  veri__veri.Kisim.MEHMUZA = dart.const(new veri__veri.Kisim.new(8, "Kisim.MEHMUZA"));
+  veri__veri.Kisim.MEHMUZL = dart.const(new veri__veri.Kisim.new(9, "Kisim.MEHMUZL"));
+  veri__veri.Kisim.MISALMUDAAF = dart.const(new veri__veri.Kisim.new(10, "Kisim.MISALMUDAAF"));
+  veri__veri.Kisim.MEHMUZFMUDAAF = dart.const(new veri__veri.Kisim.new(11, "Kisim.MEHMUZFMUDAAF"));
+  veri__veri.Kisim.MEHMUZFNAKIS = dart.const(new veri__veri.Kisim.new(12, "Kisim.MEHMUZFNAKIS"));
+  veri__veri.Kisim.MEHMUZANAKIS = dart.const(new veri__veri.Kisim.new(13, "Kisim.MEHMUZANAKIS"));
+  veri__veri.Kisim.MEHMUZALEFIFMFRK = dart.const(new veri__veri.Kisim.new(14, "Kisim.MEHMUZALEFIFMFRK"));
+  veri__veri.Kisim.values = dart.constList([veri__veri.Kisim.SAHIH, veri__veri.Kisim.MISAL, veri__veri.Kisim.ECVEF, veri__veri.Kisim.NAKIS, veri__veri.Kisim.LEFIFMKRN, veri__veri.Kisim.LEFIFMFRK, veri__veri.Kisim.MUDAAF, veri__veri.Kisim.MEHMUZF, veri__veri.Kisim.MEHMUZA, veri__veri.Kisim.MEHMUZL, veri__veri.Kisim.MISALMUDAAF, veri__veri.Kisim.MEHMUZFMUDAAF, veri__veri.Kisim.MEHMUZFNAKIS, veri__veri.Kisim.MEHMUZANAKIS, veri__veri.Kisim.MEHMUZALEFIFMFRK], veri__veri.Kisim);
   veri__veri.Veri = class Veri extends core.Object {};
   (veri__veri.Veri.new = function() {
     ;
@@ -15,8 +50,12 @@ define(['dart_sdk', 'packages/dijital_sarf/veri/kaliplar'], function(dart_sdk, k
   dart.addTypeTests(veri__veri.Veri);
   dart.setLibraryUri(veri__veri.Veri, "package:dijital_sarf/veri/veri.dart");
   dart.defineLazy(veri__veri.Veri, {
+    /*veri__veri.Veri.durum*/get durum() {
+      return veri__veri.Kisim.SAHIH;
+    },
+    set durum(_) {},
     /*veri__veri.Veri.harf*/get harf() {
-      return JSArrayOfString().of(["ا", "ب", "ت", "ث", "ج", "ح", "خ", "د", "ذ", "ر", "ز", "س", "ش", "ص", "ض", "ط", "ظ", "ع", "غ", "ف", "ق", "ك", "ل", "م", "ن", "و", "ه", "ي", "ئ", "ء", "ؤ", "ى", "ة"]);
+      return JSArrayOfString().of(["ا", "ب", "ت", "ث", "ج", "ح", "خ", "د", "ذ", "ر", "ز", "س", "ش", "ص", "ض", "ط", "ظ", "ع", "غ", "ف", "ق", "ك", "ل", "م", "ن", "و", "ه", "ي", "ئ", "ء", "ؤ", "ى", "ة", "أ"]);
     },
     /*veri__veri.Veri.hareke*/get hareke() {
       return JSArrayOfString().of(["َ", "ِ", "ُ", "ً", "ٍ", "ٌ", "ْ", "إ", "أ", "آ", "ّ"]);
@@ -35,7 +74,7 @@ define(['dart_sdk', 'packages/dijital_sarf/veri/kaliplar'], function(dart_sdk, k
   dart.trackLibraries("packages/dijital_sarf/veri/veri", {
     "package:dijital_sarf/veri/veri.dart": veri__veri
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["veri.dart"],"names":[],"mappings":";;;;;;;;;;;;;EAwGA;;;;MArG4B,oBAAI;YAAG,uBAC/B,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA;;MAGwB,sBAAM;YAAG,uBACjC,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA;;MAGwB,mBAAG;YAAG,uBAC9B,wBACA,uBACA,wBACA,wBACA,wBACA;;MAGwB,sBAAM;YAAG,uBACjC,WACA,aACA,YACA,cACA,YACA,YACA,YACA,aACA,aACA,WACA,YACA,WACA;;MAGU,sBAAM;YAAG,EACb,+BACgD,SAA9C,AAAI,4BAAC,gBAAY,4CAAkB,AAAM,8BAAC,KAC5C,8BAC8B,SAA3B,0CAAgB,AAAM,8BAAC,KACK,SAA5B,2CAAiB,AAAM,8BAAC,KACM,SAA9B,6CAAmB,AAAM,8BAAC,KACO,SAAjC,gDAAsB,AAAM,8BAAC,KACH,SAA1B,yCAAe,AAAM,8BAAC,KACS,SAA/B,8CAAoB,AAAM,8BAAC,KACS,SAApC,mDAAyB,AAAM,8BAAC,KACL,SAA3B,0CAAgB,AAAM,8BAAC,KACI,SAA3B,0CAAgB,AAAM,8BAAC,KAC1B,gCACA,gCACA,gCACA,+BACA,kCACA,iCACA,iCACA,iCACA,uCACA,iCACA,+BACA","file":"veri.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/dijital_sarf/veri/veri.dart"],"names":[],"mappings":";;;;;;;;;;;;;;IAkBA;;0CAhBK;;;;EAgBL;;;;;;;;;;;;;;;;;;;;;;;;;;;;EA2GA;;;;MAxGe,qBAAK;YAAS;;;MAED,oBAAI;YAAG,uBAC/B,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA;;MAGwB,sBAAM;YAAG,uBACjC,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA,KACA;;MAGwB,mBAAG;YAAG,uBAC9B,wBACA,uBACA,wBACA,wBACA,wBACA;;MAGwB,sBAAM;YAAG,uBACjC,WACA,aACA,YACA,cACA,YACA,YACA,YACA,aACA,aACA,WACA,YACA,WACA;;MAGU,sBAAM;YAAG,EACb,+BACgD,SAA9C,AAAI,4BAAC,gBAAY,4CAAkB,AAAM,8BAAC,KAC5C,8BAC8B,SAA3B,0CAAgB,AAAM,8BAAC,KACK,SAA5B,2CAAiB,AAAM,8BAAC,KACM,SAA9B,6CAAmB,AAAM,8BAAC,KACO,SAAjC,gDAAsB,AAAM,8BAAC,KACH,SAA1B,yCAAe,AAAM,8BAAC,KACS,SAA/B,8CAAoB,AAAM,8BAAC,KACS,SAApC,mDAAyB,AAAM,8BAAC,KACL,SAA3B,0CAAgB,AAAM,8BAAC,KACI,SAA3B,0CAAgB,AAAM,8BAAC,KAC1B,gCACA,gCACA,gCACA,+BACA,kCACA,iCACA,iCACA,iCACA,uCACA,iCACA,+BACA","file":"veri.ddc.js"}');
   // Exports:
   return {
     veri__veri: veri__veri

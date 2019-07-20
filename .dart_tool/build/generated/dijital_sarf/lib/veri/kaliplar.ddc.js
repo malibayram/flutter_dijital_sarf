@@ -111,7 +111,7 @@ define(['dart_sdk'], function(dart_sdk) {
   dart.trackLibraries("packages/dijital_sarf/veri/kaliplar", {
     "package:dijital_sarf/veri/kaliplar.dart": veri__kaliplar
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["kaliplar.dart"],"names":[],"mappings":";;;;;;;;;EAyBA;;;;MAxBgB,6BAAQ;;;;MACR,+BAAU;;;;MACV,4BAAO;;;;MACP,6BAAQ;;;;MACR,8BAAS;;;;MACT,gCAAW;;;;MACX,mCAAc;;;;MACd,4BAAO;;;;MACP,iCAAY;;;;MACZ,sCAAiB;;;;MACjB,6BAAQ;;;;MACR,6BAAQ;;;;MACR,8BAAS;;;;MACT,8BAAS;;;;MACT,8BAAS;;;;MACT,6BAAQ;;;;MACR,gCAAW;;;;MACX,+BAAU;;;;MACV,+BAAU;;;;MACV,+BAAU;;;;MACV,qCAAgB;;;;MAChB,+BAAU;;;;MACV,6BAAQ;;;;MACR,6BAAQ","file":"kaliplar.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/dijital_sarf/veri/kaliplar.dart"],"names":[],"mappings":";;;;;;;;;EA0BA;;;;MAxBgB,6BAAQ;;;;MACR,+BAAU;;;;MACV,4BAAO;;;;MACP,6BAAQ;;;;MACR,8BAAS;;;;MACT,gCAAW;;;;MACX,mCAAc;;;;MACd,4BAAO;;;;MACP,iCAAY;;;;MACZ,sCAAiB;;;;MACjB,6BAAQ;;;;MACR,6BAAQ;;;;MACR,8BAAS;;;;MACT,8BAAS;;;;MACT,8BAAS;;;;MACT,6BAAQ;;;;MACR,gCAAW;;;;MACX,+BAAU;;;;MACV,+BAAU;;;;MACV,+BAAU;;;;MACV,qCAAgB;;;;MAChB,+BAAU;;;;MACV,6BAAQ;;;;MACR,6BAAQ","file":"kaliplar.ddc.js"}');
   // Exports:
   return {
     veri__kaliplar: veri__kaliplar

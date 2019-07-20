@@ -1,6 +1,26 @@
 import 'package:dijital_sarf/veri/kaliplar.dart';
 
+enum Kisim {
+  SAHIH,
+  MISAL,
+  ECVEF,
+  NAKIS,
+  LEFIFMKRN,
+  LEFIFMFRK,
+  MUDAAF,
+  MEHMUZF,
+  MEHMUZA,
+  MEHMUZL,
+  MISALMUDAAF,
+  MEHMUZFMUDAAF,
+  MEHMUZFNAKIS,
+  MEHMUZANAKIS,
+  MEHMUZALEFIFMFRK,
+}
+
 class Veri {
+  static Kisim durum = Kisim.SAHIH;
+
   static final List<String> harf = [
     "ا",
     "ب",
@@ -35,6 +55,7 @@ class Veri {
     "ؤ",
     "ى",
     "ة",
+    "أ",
   ];
 
   static final List<String> hareke = [

@@ -96,7 +96,7 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/mate
   dart.trackLibraries("packages/dijital_sarf/sayfalar/muhtelife", {
     "package:dijital_sarf/sayfalar/muhtelife.dart": sayfalar__muhtelife
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["muhtelife.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;AAKmC;IAAiB;;;;;;EACpD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAI4B;AACxB,YAAO,mDACG,8CACC,gCAAK,geACC,ilBAET,kDACY,8DACA,+FACI,gBAEP,iBACE,SAAC,KAAK,MACV,yCACE,8CACa,sBAChB,8CACiB,+EAAe,gBACvB,mDACA,AAAM,8BAAC,CAAC,YACN,uDACK,kBACE,ypCAIlB,6CACS,kDAAwB;IASjD;;;;;EACF","file":"muhtelife.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/dijital_sarf/sayfalar/muhtelife.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;AAKmC;IAAiB;;;;;;EACpD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAI4B;AACxB,YAAO,mDACG,8CACC,gCAAK,geACC,ilBAET,kDACY,8DACA,+FACI,gBAEP,iBACE,SAAC,KAAK,MACV,yCACE,8CACa,sBAChB,8CACiB,+EAAe,gBACvB,mDACA,AAAM,8BAAC,CAAC,YACN,uDACK,kBACE,ypCAIlB,6CACS,kDAAwB;IASjD;;;;;EACF","file":"muhtelife.ddc.js"}');
   // Exports:
   return {
     sayfalar__muhtelife: sayfalar__muhtelife

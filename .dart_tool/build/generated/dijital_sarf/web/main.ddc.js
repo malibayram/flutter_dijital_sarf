@@ -8,7 +8,7 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/dijital_sarf/main'],
   const src__engine = ui.src__engine;
   const main$ = main.main;
   const main$0 = Object.create(dart.library);
-  main$0.main = function main$1() {
+  main$0.main = function() {
     return async.async(dart.dynamic, function* main() {
       yield ui$.webOnlyInitializePlatform({assetManager: new src__engine.AssetManager.new({assetsDir: "assets"})});
       main$.main();
@@ -17,7 +17,7 @@ define(['dart_sdk', 'packages/flutter_web_ui/ui', 'packages/dijital_sarf/main'],
   dart.trackLibraries("web/main", {
     "org-dartlang-app:///web/main.dart": main$0
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["main.dart"],"names":[],"mappings":";;;;;;;;;;;AAOI;MACF,MAAM,6CACiB,6CAAwB;MAE/C;IACF","file":"main.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///web/main.dart"],"names":[],"mappings":";;;;;;;;;;;AAOI;MACF,MAAM,6CACiB,6CAAwB;MAE/C;IACF","file":"main.ddc.js"}');
   // Exports:
   return {
     main: main$0

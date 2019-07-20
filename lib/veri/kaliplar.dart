@@ -1,3 +1,4 @@
+//Süleyman Bal
 class Kalip {
   static String fiilMadi;
   static String fiilMudari;

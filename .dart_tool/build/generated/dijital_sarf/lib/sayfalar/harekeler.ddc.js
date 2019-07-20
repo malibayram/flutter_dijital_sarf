@@ -92,7 +92,7 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/mate
   dart.trackLibraries("packages/dijital_sarf/sayfalar/harekeler", {
     "package:dijital_sarf/sayfalar/harekeler.dart": sayfalar__harekeler
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["harekeler.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;AAKmC;IAAiB;;;;;;EACpD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAI4B;AACxB,YAAO,mDACG,8CACC,gCAAK,6dACC,ilBAEA,8DACC,+FACI,gBAEF,AAAO,8CACV,SAAC,KAAK,MACV,yCACE,oDACe,8CAAI,aACjB,uDACgC,yDACnB,sBAChB,gCACE,AAAiB,qBAAL,aAAF,CAAC,IAAG,YACP,uDACK,kBACE,4kBAGhB,gCACE,AAAsB,gBAAZ,AAAM,8BAAC,CAAC,KAAE,aACb,uDACK,kBACE;IAUhC;;;;;EACF","file":"harekeler.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/dijital_sarf/sayfalar/harekeler.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;AAKmC;IAAiB;;;;;;EACpD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAI4B;AACxB,YAAO,mDACG,8CACC,gCAAK,6dACC,ilBAEA,8DACC,+FACI,gBAEF,AAAO,8CACV,SAAC,KAAK,MACV,yCACE,oDACe,8CAAI,aACjB,uDACgC,yDACnB,sBAChB,gCACE,AAAiB,qBAAL,aAAF,CAAC,IAAG,YACP,uDACK,kBACE,4kBAGhB,gCACE,AAAsB,gBAAZ,AAAM,8BAAC,CAAC,KAAE,aACb,uDACK,kBACE;IAUhC;;;;;EACF","file":"harekeler.ddc.js"}');
   // Exports:
   return {
     sayfalar__harekeler: sayfalar__harekeler

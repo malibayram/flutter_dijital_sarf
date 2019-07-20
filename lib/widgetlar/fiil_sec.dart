@@ -8,9 +8,9 @@ class FiilSec extends StatefulWidget {
 }
 
 class _FiilSecState extends State<FiilSec> {
-  String _harf1;
-  String _harf2;
-  String _harf3;
+  String _harf1 = Veri.harf[19];
+  String _harf2 = Veri.harf[17];
+  String _harf3 = Veri.harf[22];
 
   String _bab;
   String _masdar;
@@ -41,81 +41,224 @@ class _FiilSecState extends State<FiilSec> {
     }
 
     Kalip.fiilMadi =
-        "${_harf1 ?? Veri.harf[19]}${Veri.hareke[0]}${_harf2 ?? Veri.harf[17]}$madiHareke${_harf3 ?? Veri.harf[22]}${Veri.hareke[0]}";
+        "$_harf1${Veri.hareke[0]}$_harf2$madiHareke$_harf3${Veri.hareke[0]}";
 
     Kalip.fiilMudari =
-        "${Veri.hareke[0]}${_harf1 ?? Veri.harf[19]}${Veri.hareke[6]}${_harf2 ?? Veri.harf[17]}$mudariHareke${_harf3 ?? Veri.harf[22]}";
+        "${Veri.hareke[0]}$_harf1${Veri.hareke[6]}$_harf2$mudariHareke$_harf3";
   }
 
   masdarYap(String m) {
     _yMasdar =
-        "${_harf1 ?? Veri.harf[19]}${Veri.hareke[0]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[6]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[3]}${Veri.harf[0]}";
+        "$_harf1${Veri.hareke[0]}$_harf2${Veri.hareke[6]}$_harf3${Veri.hareke[3]}${Veri.harf[0]}";
     switch (m) {
       case "فِعَالَةً":
         _yMasdar =
-            "${_harf1 ?? Veri.harf[19]}${Veri.hareke[1]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[0]}${Veri.harf[0]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[32]}${Veri.hareke[3]}";
+            "$_harf1${Veri.hareke[1]}$_harf2${Veri.hareke[0]}${Veri.harf[0]}$_harf3${Veri.hareke[0]}${Veri.harf[32]}${Veri.hareke[3]}";
         break;
       case "فِعَالًا":
         _yMasdar =
-            "${_harf1 ?? Veri.harf[19]}${Veri.hareke[1]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[0]}${Veri.harf[0]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[3]}${Veri.harf[0]}";
+            "$_harf1${Veri.hareke[1]}$_harf2${Veri.hareke[0]}${Veri.harf[0]}$_harf3${Veri.hareke[3]}${Veri.harf[0]}";
         break;
       case "فَعَلَانًا":
         _yMasdar =
-            "${_harf1 ?? Veri.harf[19]}${Veri.hareke[0]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[0]}${Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[0]}${Veri.harf[24]}${Veri.hareke[3]}${Veri.harf[0]}";
+            "$_harf1${Veri.hareke[0]}$_harf2${Veri.hareke[0]}${Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[0]}${Veri.harf[24]}${Veri.hareke[3]}${Veri.harf[0]}";
         break;
       case "فُعَالًا":
         _yMasdar =
-            "${_harf1 ?? Veri.harf[19]}${Veri.hareke[2]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[0]}${Veri.harf[0]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[3]}${Veri.harf[0]}";
+            "$_harf1${Veri.hareke[2]}$_harf2${Veri.hareke[0]}${Veri.harf[0]}$_harf3${Veri.hareke[3]}${Veri.harf[0]}";
         break;
       case "فُعْلَةً":
         _yMasdar =
-            "${_harf1 ?? Veri.harf[19]}${Veri.hareke[2]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[6]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[32]}${Veri.hareke[3]}";
+            "$_harf1${Veri.hareke[2]}$_harf2${Veri.hareke[6]}$_harf3${Veri.hareke[0]}${Veri.harf[32]}${Veri.hareke[3]}";
         break;
       case "فَعِيلًا":
         _yMasdar =
-            "${_harf1 ?? Veri.harf[19]}${Veri.hareke[0]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[1]}${_harf3 ?? Veri.harf[27]}${Veri.harf[22]}${Veri.hareke[3]}${Veri.harf[0]}";
+            "$_harf1${Veri.hareke[0]}$_harf2${Veri.hareke[1]}${_harf3 ?? Veri.harf[27]}${Veri.harf[22]}${Veri.hareke[3]}${Veri.harf[0]}";
         break;
 
       case "فُعُولَةً":
         _yMasdar =
-            "${_harf1 ?? Veri.harf[19]}${Veri.hareke[2]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[2]}${Veri.harf[25]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[32]}${Veri.hareke[3]}";
+            "$_harf1${Veri.hareke[2]}$_harf2${Veri.hareke[2]}${Veri.harf[25]}$_harf3${Veri.hareke[0]}${Veri.harf[32]}${Veri.hareke[3]}";
         break;
 
       case "فَعَالَةً":
         _yMasdar =
-            "${_harf1 ?? Veri.harf[19]}${Veri.hareke[0]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[0]}${Veri.harf[0]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[32]}${Veri.hareke[3]}";
+            "$_harf1${Veri.hareke[0]}$_harf2${Veri.hareke[0]}${Veri.harf[0]}$_harf3${Veri.hareke[0]}${Veri.harf[32]}${Veri.hareke[3]}";
         break;
 
       case "فَعَلًا":
         _yMasdar =
-            "${_harf1 ?? Veri.harf[19]}${Veri.hareke[0]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[0]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[3]}${Veri.harf[0]}";
+            "$_harf1${Veri.hareke[0]}$_harf2${Veri.hareke[0]}$_harf3${Veri.hareke[3]}${Veri.harf[0]}";
         break;
 
       case "فُعُولًا":
         _yMasdar =
-            "${_harf1 ?? Veri.harf[19]}${Veri.hareke[2]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[2]}${Veri.harf[25]}${_harf3 ?? Veri.harf[22]}${Veri.harf[0]}${Veri.hareke[3]}";
+            "$_harf1${Veri.hareke[2]}$_harf2${Veri.hareke[2]}${Veri.harf[25]}$_harf3${Veri.harf[0]}${Veri.hareke[3]}";
         break;
 
       case "فِعْلًا":
         _yMasdar =
-            "${_harf1 ?? Veri.harf[19]}${Veri.hareke[1]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[6]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[3]}${Veri.harf[0]}";
+            "$_harf1${Veri.hareke[1]}$_harf2${Veri.hareke[6]}$_harf3${Veri.hareke[3]}${Veri.harf[0]}";
         break;
 
       case "فُعْلًا":
         _yMasdar =
-            "${_harf1 ?? Veri.harf[19]}${Veri.hareke[2]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[6]}${Veri.harf[22]}${Veri.hareke[3]}${Veri.harf[0]}";
+            "$_harf1${Veri.hareke[2]}$_harf2${Veri.hareke[6]}${Veri.harf[22]}${Veri.hareke[3]}${Veri.harf[0]}";
         break;
     }
     Kalip.yMasdar = _yMasdar;
   }
 
+//Süleyman Bal
+
   yirmiDort() {
+    Veri.durum = Kisim.SAHIH;
+
+    if ((_harf1 == Veri.harf[25] || _harf1 == Veri.harf[27]) &&
+        Veri.harf.skip(1).take(24).contains(_harf2) &&
+        Veri.harf.skip(1).take(24).contains(_harf3) &&
+        _harf2 != _harf3) {
+      Veri.durum = Kisim.MISAL;
+    }
+
+    if ((Veri.harf.skip(1).take(24).contains(_harf1)) &&
+        (_harf2 == Veri.harf[0]) &&
+        (Veri.harf.skip(1).take(24).contains(_harf3))) {
+      Veri.durum = Kisim.ECVEF;
+    }
+
+    if ((Veri.harf.skip(1).take(24).contains(_harf1)) &&
+        (Veri.harf.skip(1).take(24).contains(_harf2)) &&
+        (_harf3 == Veri.harf[25] ||
+            _harf3 == Veri.harf[27] ||
+            _harf3 == Veri.harf[0] ||
+            _harf3 == Veri.harf[31]) &&
+        (_harf1 != _harf2)) {
+      Veri.durum = Kisim.NAKIS;
+    }
+    if ((Veri.harf.skip(1).take(24).contains(_harf1)) &&
+        (_harf2 == Veri.harf[25] ||
+            _harf2 == Veri.harf[27] ||
+            _harf2 == Veri.harf[0] ||
+            _harf2 == Veri.harf[31]) &&
+        (_harf3 == Veri.harf[25] ||
+            _harf3 == Veri.harf[27] ||
+            _harf3 == Veri.harf[0] ||
+            _harf3 == Veri.harf[31])) {
+      Veri.durum = Kisim.LEFIFMKRN;
+    }
+    if ((_harf1 == Veri.harf[25] ||
+            _harf1 == Veri.harf[27] ||
+            _harf1 == Veri.harf[0] ||
+            _harf1 == Veri.harf[31]) &&
+        (Veri.harf.skip(1).take(24).contains(_harf2)) &&
+        (_harf3 == Veri.harf[25] ||
+            _harf3 == Veri.harf[27] ||
+            _harf3 == Veri.harf[0] ||
+            _harf3 == Veri.harf[31])) {
+      Veri.durum = Kisim.LEFIFMFRK;
+    }
+
+    if (Veri.harf.skip(1).take(24).contains(_harf1) &&
+        Veri.harf.skip(1).take(24).contains(_harf2) &&
+        Veri.harf.skip(1).take(24).contains(_harf3) &&
+        _harf2 == _harf3) {
+      Veri.durum = Kisim.MUDAAF;
+    }
+
+    if ((_harf1 == Veri.harf[28] ||
+            _harf1 == Veri.harf[29] ||
+            _harf1 == Veri.harf[30] ||
+            _harf1 == Veri.harf[33]) &&
+        _harf2 != _harf3) {
+      Veri.durum = Kisim.MEHMUZF;
+    }
+
+    if ((_harf2 == Veri.harf[28] ||
+        _harf2 == Veri.harf[29] ||
+        _harf2 == Veri.harf[30] ||
+        _harf2 == Veri.harf[33])) {
+      Veri.durum = Kisim.MEHMUZA;
+    }
+
+    if ((_harf3 == Veri.harf[28] ||
+        _harf3 == Veri.harf[29] ||
+        _harf3 == Veri.harf[30] ||
+        _harf3 == Veri.harf[33])) {
+      Veri.durum = Kisim.MEHMUZL;
+    }
+
+    if ((_harf1 == Veri.harf[25] || _harf1 == Veri.harf[27]) &&
+        Veri.harf.skip(1).take(24).contains(_harf2) &&
+        Veri.harf.skip(1).take(24).contains(_harf3) &&
+        _harf2 == _harf3) {
+      Veri.durum = Kisim.MISALMUDAAF;
+    }
+
+    if ((_harf1 == Veri.harf[28] ||
+            _harf1 == Veri.harf[29] ||
+            _harf1 == Veri.harf[30] ||
+            _harf1 == Veri.harf[33]) &&
+        _harf2 == _harf3) {
+      Veri.durum = Kisim.MEHMUZFMUDAAF;
+    }
+
+    switch (Veri.durum) {
+      case Kisim.SAHIH:
+        sahih();
+        break;
+      case Kisim.MISAL:
+        misal();
+        break;
+      case Kisim.ECVEF:
+        ecvef();
+        break;
+      case Kisim.NAKIS:
+        nakis();
+        break;
+      case Kisim.LEFIFMKRN:
+        lefifmkrn();
+        break;
+      case Kisim.LEFIFMFRK:
+        lefifmfrk();
+        break;
+      case Kisim.MUDAAF:
+        mudaaf();
+        break;
+      case Kisim.MEHMUZF:
+        mehmuzf();
+        break;
+      case Kisim.MEHMUZA:
+        mehmuza();
+        break;
+      case Kisim.MEHMUZL:
+        mehmuzl();
+        break;
+      case Kisim.MISALMUDAAF:
+        misalmudaaf();
+        break;
+      case Kisim.MEHMUZFMUDAAF:
+        mehmuzfmudaaf();
+        break;
+      case Kisim.MEHMUZFNAKIS:
+        mehmuzfnakis();
+        break;
+      case Kisim.MEHMUZANAKIS:
+        mehmuzanakis();
+        break;
+      case Kisim.MEHMUZALEFIFMFRK:
+        mehmuzalefifmfrk();
+        break;
+    }
+  }
+
+  sahih() {
     fiilYap(_bab ?? Veri.bab[0]);
     masdarYap(_masdar ?? Veri.masdar[0]);
     Kalip.ismiFail =
-        "${_harf1 ?? Veri.harf[19]}${Veri.hareke[0]}${Veri.harf[0]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[1]}${_harf3 ?? Veri.harf[22]}";
+        "$_harf1${Veri.hareke[0]}${Veri.harf[0]}$_harf2${Veri.hareke[1]}$_harf3";
     Kalip.ismiMeful =
-        "${Veri.harf[23]}${Veri.hareke[0]}${_harf1 ?? Veri.harf[19]}${Veri.hareke[6]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[2]}${Veri.harf[25]}${_harf3 ?? Veri.harf[22]}";
+        "${Veri.harf[23]}${Veri.hareke[0]}$_harf1${Veri.hareke[6]}$_harf2${Veri.hareke[2]}${Veri.harf[25]}$_harf3";
     Kalip.cahdiMutlak =
         "${Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[23]}${Veri.hareke[6]} ${Veri.harf[27]}${Kalip.fiilMudari}";
     Kalip.cahdiMustagrak =
@@ -137,28 +280,84 @@ class _FiilSecState extends State<FiilSec> {
         "${Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[0]} ${Veri.harf[2]}${Kalip.fiilMudari}${Veri.hareke[6]}";
 
     Kalip.ismiMekan =
-        "${Veri.harf[23]}${Veri.hareke[0]}${_harf1 ?? Veri.harf[19]}${Veri.hareke[6]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[0]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[5]}";
+        "${Veri.harf[23]}${Veri.hareke[0]}$_harf1${Veri.hareke[6]}$_harf2${Veri.hareke[0]}$_harf3${Veri.hareke[5]}";
     Kalip.ismiAlet =
-        "${Veri.harf[23]}${Veri.hareke[1]}${_harf1 ?? Veri.harf[19]}${Veri.hareke[6]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[0]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[5]}";
+        "${Veri.harf[23]}${Veri.hareke[1]}$_harf1${Veri.hareke[6]}$_harf2${Veri.hareke[0]}$_harf3${Veri.hareke[5]}";
     Kalip.merreMastar =
-        "${_harf1 ?? Veri.harf[19]}${Veri.hareke[0]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[6]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[32]}${Veri.hareke[3]}";
+        "$_harf1${Veri.hareke[0]}$_harf2${Veri.hareke[6]}$_harf3${Veri.hareke[0]}${Veri.harf[32]}${Veri.hareke[3]}";
     Kalip.neviMastar =
-        "${_harf1 ?? Veri.harf[19]}${Veri.hareke[1]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[6]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[32]}${Veri.hareke[3]}";
+        "$_harf1${Veri.hareke[1]}$_harf2${Veri.hareke[6]}$_harf3${Veri.hareke[0]}${Veri.harf[32]}${Veri.hareke[3]}";
 
     Kalip.ismiTasgir =
-        "${_harf1 ?? Veri.harf[19]}${Veri.hareke[2]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[0]}${Veri.harf[27]}${Veri.hareke[6]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[5]}";
+        "$_harf1${Veri.hareke[2]}$_harf2${Veri.hareke[0]}${Veri.harf[27]}${Veri.hareke[6]}$_harf3${Veri.hareke[5]}";
     Kalip.ismiMensub =
         "${_yMasdar.substring(0, _yMasdar.length - 2)}${Veri.hareke[1]}${Veri.harf[27]}${Veri.hareke[10]}${Veri.hareke[5]}";
     Kalip.mubalagaIsmiFail =
-        "${_harf1 ?? Veri.harf[19]}${Veri.hareke[0]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[10]}${Veri.hareke[0]}${Veri.harf[0]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[5]}";
+        "$_harf1${Veri.hareke[0]}$_harf2${Veri.hareke[10]}${Veri.hareke[0]}${Veri.harf[0]}$_harf3${Veri.hareke[5]}";
     Kalip.ismiTafdil =
-        "${Veri.hareke[8]}${Veri.hareke[0]}${_harf1 ?? Veri.harf[19]}${Veri.hareke[6]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[0]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[2]}";
+        "${Veri.hareke[8]}${Veri.hareke[0]}$_harf1${Veri.hareke[6]}$_harf2${Veri.hareke[0]}$_harf3${Veri.hareke[2]}";
 
     Kalip.taaccub1 =
-        "${Veri.harf[23]}${Veri.hareke[0]}${Veri.harf[0]} ${Veri.hareke[8]}${Veri.hareke[0]}${_harf1 ?? Veri.harf[19]}${Veri.hareke[6]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[0]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[26]}${Veri.hareke[2]}";
+        "${Veri.harf[23]}${Veri.hareke[0]}${Veri.harf[0]} ${Veri.hareke[8]}${Veri.hareke[0]}$_harf1${Veri.hareke[6]}$_harf2${Veri.hareke[0]}$_harf3${Veri.hareke[0]}${Veri.harf[26]}${Veri.hareke[2]}";
 
     Kalip.taaccub2 =
-        "${Veri.harf[25]}${Veri.hareke[0]}${Veri.hareke[8]}${Veri.hareke[0]}${_harf1 ?? Veri.harf[19]}${Veri.hareke[6]}${_harf2 ?? Veri.harf[17]}${Veri.hareke[1]}${_harf3 ?? Veri.harf[22]}${Veri.hareke[6]} ${Veri.harf[1]}${Veri.hareke[1]}${Veri.harf[26]}${Veri.hareke[1]}";
+        "${Veri.harf[25]}${Veri.hareke[0]}${Veri.hareke[8]}${Veri.hareke[0]}$_harf1${Veri.hareke[6]}$_harf2${Veri.hareke[1]}$_harf3${Veri.hareke[6]} ${Veri.harf[1]}${Veri.hareke[1]}${Veri.harf[26]}${Veri.hareke[1]}";
+  }
+
+  misal() {
+    sahih();
+  }
+
+  ecvef() {
+    sahih();
+  }
+
+  nakis() {
+    sahih();
+  }
+
+  lefifmkrn() {
+    sahih();
+  }
+
+  lefifmfrk() {
+    sahih();
+  }
+
+  mudaaf() {
+    sahih();
+  }
+
+  mehmuzf() {
+    sahih();
+  }
+
+  mehmuza() {
+    sahih();
+  }
+
+  mehmuzl() {
+    sahih();
+  }
+
+  mehmuzfmudaaf() {
+    sahih();
+  }
+
+  misalmudaaf() {
+    sahih();
+  }
+
+  mehmuzfnakis() {
+    sahih();
+  }
+
+  mehmuzanakis() {
+    sahih();
+  }
+
+  mehmuzalefifmfrk() {
+    sahih();
   }
 
   @override
@@ -170,6 +369,14 @@ class _FiilSecState extends State<FiilSec> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            SizedBox(height: 12.0),
+            Text(
+              "${Veri.durum}",
+              style: TextStyle(
+                fontSize: 60.0,
+                fontFamily: 'Lateef',
+              ),
+            ),
             SizedBox(height: 12.0),
             Text(
               "${Kalip.fiilMadi} ${Veri.harf[27]}${Kalip.fiilMudari}${Veri.hareke[2]} ${Kalip.yMasdar}",

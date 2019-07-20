@@ -64,7 +64,7 @@ define(['dart_sdk', 'packages/flutter_web/material', 'packages/dijital_sarf/anas
   dart.setLibraryUri(main.MyApp, "package:dijital_sarf/main.dart");
   let const$20;
   let const$21;
-  main.main = function main$() {
+  main.main = function() {
     return src__widgets__binding.runApp(new main.MyApp.new({$creationLocationd_0dea112b090073317d4: const$21 || (const$21 = dart.const(new src__widgets__widget_inspector._Location.new({line: 7, column: 23, file: "org-dartlang-app:///packages/dijital_sarf/main.dart", parameterLocations: const$20 || (const$20 = dart.constList([], src__widgets__widget_inspector._Location))})))}));
   };
   let const$22;
@@ -82,7 +82,7 @@ define(['dart_sdk', 'packages/flutter_web/material', 'packages/dijital_sarf/anas
   dart.trackLibraries("packages/dijital_sarf/main", {
     "package:dijital_sarf/main.dart": main
   }, {
-  }, '{"version":3,"sourceRoot":"","sources":["main.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAgB4B;AACxB,YAAO,qEACuB,cACrB,uBACA,wDACiB,2CAElB,+VACE,uBACC,SAAc,SAAgB,UAC9B,2DACwB,8BACtB,8CACI,QAAc,WACd,oDACY,AAAY,wCAAT,OAAO,6BACR,cAEZ,KAAK;IAO1B;;;;;;EACF;;;;;;;;;;AApCe,wCAAO;EAAQ;;;;;;;;MAE1B,YAAO;YAAG,2DACZ,YAAY,QAAC,WAAY,yXACzB,cAAc,QAAC,WAAY,+XAC3B,cAAc,QAAC,WAAY","file":"main.ddc.js"}');
+  }, '{"version":3,"sourceRoot":"","sources":["org-dartlang-app:///packages/dijital_sarf/main.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAgB4B;AACxB,YAAO,qEACuB,cACrB,uBACA,wDACiB,2CAElB,+VACE,uBACC,SAAc,SAAgB,UAC9B,2DACwB,8BACtB,8CACI,QAAc,WACd,oDACY,AAAY,wCAAT,OAAO,6BACR,cAEZ,KAAK;IAO1B;;;;;;EACF;;;;;;;;;;AApCe,wCAAO;EAAQ;;;;;;;;MAE1B,YAAO;YAAG,2DACZ,YAAY,QAAC,WAAY,yXACzB,cAAc,QAAC,WAAY,+XAC3B,cAAc,QAAC,WAAY","file":"main.ddc.js"}');
   // Exports:
   return {
     main: main

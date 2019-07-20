@@ -3,7 +3,7 @@ import 'package:dijital_sarf/sayfalar/harekeler.dart';
 import 'package:dijital_sarf/sayfalar/harfler.dart';
 import 'package:dijital_sarf/sayfalar/muhtelife.dart';
 import 'package:flutter_web/material.dart';
-
+//Süleyman Bal
 void main() => runApp(MyApp());
 
 var rotalar = {
