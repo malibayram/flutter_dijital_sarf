@@ -1,5 +1,5 @@
-import 'package:dijital_sarf/veri/veri.dart';
-import 'package:flutter_web/material.dart';
+import '../veri/veri.dart';
+import 'package:flutter/material.dart';
 
 class Harekeler extends StatefulWidget {
   @override
@@ -15,9 +15,7 @@ class _HarekelerState extends State<Harekeler> {
         centerTitle: true,
       ),
       body: GridView.builder(
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 4,
-        ),
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
         itemCount: Veri.hareke.length,
         itemBuilder: (ctx, i) {
           return Card(

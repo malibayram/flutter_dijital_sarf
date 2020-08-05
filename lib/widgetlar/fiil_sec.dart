@@ -1,6 +1,6 @@
-import 'package:dijital_sarf/veri/kaliplar.dart';
-import 'package:dijital_sarf/veri/veri.dart';
-import 'package:flutter_web/material.dart';
+import '../veri/kaliplar.dart';
+import '../veri/veri.dart';
+import 'package:flutter/material.dart';
 
 class FiilSec extends StatefulWidget {
   @override
@@ -40,16 +40,13 @@ class _FiilSecState extends State<FiilSec> {
         break;
     }
 
-    Kalip.fiilMadi =
-        "$_harf1${Veri.hareke[0]}$_harf2$madiHareke$_harf3${Veri.hareke[0]}";
+    Kalip.fiilMadi = "$_harf1${Veri.hareke[0]}$_harf2$madiHareke$_harf3${Veri.hareke[0]}";
 
-    Kalip.fiilMudari =
-        "${Veri.hareke[0]}$_harf1${Veri.hareke[6]}$_harf2$mudariHareke$_harf3";
+    Kalip.fiilMudari = "${Veri.hareke[0]}$_harf1${Veri.hareke[6]}$_harf2$mudariHareke$_harf3";
   }
 
   masdarYap(String m) {
-    _yMasdar =
-        "$_harf1${Veri.hareke[0]}$_harf2${Veri.hareke[6]}$_harf3${Veri.hareke[3]}${Veri.harf[0]}";
+    _yMasdar = "$_harf1${Veri.hareke[0]}$_harf2${Veri.hareke[6]}$_harf3${Veri.hareke[3]}${Veri.harf[0]}";
     switch (m) {
       case "فِعَالَةً":
         _yMasdar =
@@ -87,8 +84,7 @@ class _FiilSecState extends State<FiilSec> {
         break;
 
       case "فَعَلًا":
-        _yMasdar =
-            "$_harf1${Veri.hareke[0]}$_harf2${Veri.hareke[0]}$_harf3${Veri.hareke[3]}${Veri.harf[0]}";
+        _yMasdar = "$_harf1${Veri.hareke[0]}$_harf2${Veri.hareke[0]}$_harf3${Veri.hareke[3]}${Veri.harf[0]}";
         break;
 
       case "فُعُولًا":
@@ -97,13 +93,11 @@ class _FiilSecState extends State<FiilSec> {
         break;
 
       case "فِعْلًا":
-        _yMasdar =
-            "$_harf1${Veri.hareke[1]}$_harf2${Veri.hareke[6]}$_harf3${Veri.hareke[3]}${Veri.harf[0]}";
+        _yMasdar = "$_harf1${Veri.hareke[1]}$_harf2${Veri.hareke[6]}$_harf3${Veri.hareke[3]}${Veri.harf[0]}";
         break;
 
       case "فُعْلًا":
-        _yMasdar =
-            "$_harf1${Veri.hareke[2]}$_harf2${Veri.hareke[6]}${Veri.harf[22]}${Veri.hareke[3]}${Veri.harf[0]}";
+        _yMasdar = "$_harf1${Veri.hareke[2]}$_harf2${Veri.hareke[6]}${Veri.harf[22]}${Veri.hareke[3]}${Veri.harf[0]}";
         break;
     }
     Kalip.yMasdar = _yMasdar;
@@ -129,33 +123,18 @@ class _FiilSecState extends State<FiilSec> {
 
     if ((Veri.harf.skip(1).take(24).contains(_harf1)) &&
         (Veri.harf.skip(1).take(24).contains(_harf2)) &&
-        (_harf3 == Veri.harf[25] ||
-            _harf3 == Veri.harf[27] ||
-            _harf3 == Veri.harf[0] ||
-            _harf3 == Veri.harf[31]) &&
+        (_harf3 == Veri.harf[25] || _harf3 == Veri.harf[27] || _harf3 == Veri.harf[0] || _harf3 == Veri.harf[31]) &&
         (_harf1 != _harf2)) {
       Veri.durum = Kisim.NAKIS;
     }
     if ((Veri.harf.skip(1).take(24).contains(_harf1)) &&
-        (_harf2 == Veri.harf[25] ||
-            _harf2 == Veri.harf[27] ||
-            _harf2 == Veri.harf[0] ||
-            _harf2 == Veri.harf[31]) &&
-        (_harf3 == Veri.harf[25] ||
-            _harf3 == Veri.harf[27] ||
-            _harf3 == Veri.harf[0] ||
-            _harf3 == Veri.harf[31])) {
+        (_harf2 == Veri.harf[25] || _harf2 == Veri.harf[27] || _harf2 == Veri.harf[0] || _harf2 == Veri.harf[31]) &&
+        (_harf3 == Veri.harf[25] || _harf3 == Veri.harf[27] || _harf3 == Veri.harf[0] || _harf3 == Veri.harf[31])) {
       Veri.durum = Kisim.LEFIFMKRN;
     }
-    if ((_harf1 == Veri.harf[25] ||
-            _harf1 == Veri.harf[27] ||
-            _harf1 == Veri.harf[0] ||
-            _harf1 == Veri.harf[31]) &&
+    if ((_harf1 == Veri.harf[25] || _harf1 == Veri.harf[27] || _harf1 == Veri.harf[0] || _harf1 == Veri.harf[31]) &&
         (Veri.harf.skip(1).take(24).contains(_harf2)) &&
-        (_harf3 == Veri.harf[25] ||
-            _harf3 == Veri.harf[27] ||
-            _harf3 == Veri.harf[0] ||
-            _harf3 == Veri.harf[31])) {
+        (_harf3 == Veri.harf[25] || _harf3 == Veri.harf[27] || _harf3 == Veri.harf[0] || _harf3 == Veri.harf[31])) {
       Veri.durum = Kisim.LEFIFMFRK;
     }
 
@@ -166,25 +145,16 @@ class _FiilSecState extends State<FiilSec> {
       Veri.durum = Kisim.MUDAAF;
     }
 
-    if ((_harf1 == Veri.harf[28] ||
-            _harf1 == Veri.harf[29] ||
-            _harf1 == Veri.harf[30] ||
-            _harf1 == Veri.harf[33]) &&
+    if ((_harf1 == Veri.harf[28] || _harf1 == Veri.harf[29] || _harf1 == Veri.harf[30] || _harf1 == Veri.harf[33]) &&
         _harf2 != _harf3) {
       Veri.durum = Kisim.MEHMUZF;
     }
 
-    if ((_harf2 == Veri.harf[28] ||
-        _harf2 == Veri.harf[29] ||
-        _harf2 == Veri.harf[30] ||
-        _harf2 == Veri.harf[33])) {
+    if ((_harf2 == Veri.harf[28] || _harf2 == Veri.harf[29] || _harf2 == Veri.harf[30] || _harf2 == Veri.harf[33])) {
       Veri.durum = Kisim.MEHMUZA;
     }
 
-    if ((_harf3 == Veri.harf[28] ||
-        _harf3 == Veri.harf[29] ||
-        _harf3 == Veri.harf[30] ||
-        _harf3 == Veri.harf[33])) {
+    if ((_harf3 == Veri.harf[28] || _harf3 == Veri.harf[29] || _harf3 == Veri.harf[30] || _harf3 == Veri.harf[33])) {
       Veri.durum = Kisim.MEHMUZL;
     }
 
@@ -195,10 +165,7 @@ class _FiilSecState extends State<FiilSec> {
       Veri.durum = Kisim.MISALMUDAAF;
     }
 
-    if ((_harf1 == Veri.harf[28] ||
-            _harf1 == Veri.harf[29] ||
-            _harf1 == Veri.harf[30] ||
-            _harf1 == Veri.harf[33]) &&
+    if ((_harf1 == Veri.harf[28] || _harf1 == Veri.harf[29] || _harf1 == Veri.harf[30] || _harf1 == Veri.harf[33]) &&
         _harf2 == _harf3) {
       Veri.durum = Kisim.MEHMUZFMUDAAF;
     }
@@ -255,27 +222,21 @@ class _FiilSecState extends State<FiilSec> {
   sahih() {
     fiilYap(_bab ?? Veri.bab[0]);
     masdarYap(_masdar ?? Veri.masdar[0]);
-    Kalip.ismiFail =
-        "$_harf1${Veri.hareke[0]}${Veri.harf[0]}$_harf2${Veri.hareke[1]}$_harf3";
+    Kalip.ismiFail = "$_harf1${Veri.hareke[0]}${Veri.harf[0]}$_harf2${Veri.hareke[1]}$_harf3";
     Kalip.ismiMeful =
         "${Veri.harf[23]}${Veri.hareke[0]}$_harf1${Veri.hareke[6]}$_harf2${Veri.hareke[2]}${Veri.harf[25]}$_harf3";
     Kalip.cahdiMutlak =
         "${Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[23]}${Veri.hareke[6]} ${Veri.harf[27]}${Kalip.fiilMudari}";
     Kalip.cahdiMustagrak =
         "${Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[23]}${Veri.hareke[10]}${Veri.hareke[0]}${Veri.harf[0]} ${Veri.harf[27]}${Kalip.fiilMudari}";
-    Kalip.nefiHal =
-        "${Veri.harf[23]}${Veri.hareke[0]}${Veri.harf[0]} ${Veri.harf[27]}${Kalip.fiilMudari}";
-    Kalip.nefiIstikbal =
-        "${Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[0]} ${Veri.harf[27]}${Kalip.fiilMudari}";
+    Kalip.nefiHal = "${Veri.harf[23]}${Veri.hareke[0]}${Veri.harf[0]} ${Veri.harf[27]}${Kalip.fiilMudari}";
+    Kalip.nefiIstikbal = "${Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[0]} ${Veri.harf[27]}${Kalip.fiilMudari}";
     Kalip.tekitNefiIstikbal =
         "${Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[24]}${Veri.hareke[6]} ${Veri.harf[27]}${Kalip.fiilMudari}";
 
-    Kalip.emriGaib =
-        "${Veri.harf[22]}${Veri.hareke[1]}${Veri.harf[27]}${Kalip.fiilMudari}";
-    Kalip.nehiGaib =
-        "${Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[0]} ${Veri.harf[27]}${Kalip.fiilMudari}";
-    Kalip.emriHadir =
-        "${Veri.harf[0]}${Veri.hareke[2]}${Kalip.fiilMudari.substring(1)}${Veri.hareke[6]}";
+    Kalip.emriGaib = "${Veri.harf[22]}${Veri.hareke[1]}${Veri.harf[27]}${Kalip.fiilMudari}";
+    Kalip.nehiGaib = "${Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[0]} ${Veri.harf[27]}${Kalip.fiilMudari}";
+    Kalip.emriHadir = "${Veri.harf[0]}${Veri.hareke[2]}${Kalip.fiilMudari.substring(1)}${Veri.hareke[6]}";
     Kalip.nehiHadir =
         "${Veri.harf[22]}${Veri.hareke[0]}${Veri.harf[0]} ${Veri.harf[2]}${Kalip.fiilMudari}${Veri.hareke[6]}";
 
@@ -385,119 +346,122 @@ class _FiilSecState extends State<FiilSec> {
                 fontFamily: 'Lateef',
               ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(": اختر الحروف"),
-                SizedBox(width: 12.0),
-                DropdownButton(
-                  items: Veri.harf.map((String harf) {
-                    return DropdownMenuItem(
-                      value: harf,
-                      child: Text(
-                        harf,
-                        style: TextStyle(
-                          fontSize: 30.0,
-                          fontFamily: 'Lateef',
+            SizedBox(
+              height: 60.0,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[
+                  Text(": اختر الحروف"),
+                  SizedBox(width: 12.0),
+                  DropdownButton(
+                    items: Veri.harf.map((String harf) {
+                      return DropdownMenuItem(
+                        value: harf,
+                        child: Text(
+                          harf,
+                          style: TextStyle(
+                            fontSize: 30.0,
+                            fontFamily: 'Lateef',
+                          ),
                         ),
-                      ),
-                    );
-                  }).toList(),
-                  onChanged: (s) {
-                    _harf1 = s;
-                    setState(() {});
-                  },
-                  value: _harf1,
-                  hint: Text("ف"),
-                ),
-                DropdownButton(
-                  items: Veri.harf.map((String harf) {
-                    return DropdownMenuItem(
-                      value: harf,
-                      child: Text(
-                        harf,
-                        style: TextStyle(
-                          fontSize: 30.0,
-                          fontFamily: 'Lateef',
+                      );
+                    }).toList(),
+                    onChanged: (s) {
+                      _harf1 = s;
+                      setState(() {});
+                    },
+                    value: _harf1,
+                    hint: Text("ف"),
+                  ),
+                  DropdownButton(
+                    items: Veri.harf.map((String harf) {
+                      return DropdownMenuItem(
+                        value: harf,
+                        child: Text(
+                          harf,
+                          style: TextStyle(
+                            fontSize: 30.0,
+                            fontFamily: 'Lateef',
+                          ),
                         ),
-                      ),
-                    );
-                  }).toList(),
-                  onChanged: (s) {
-                    _harf2 = s;
-                    setState(() {});
-                  },
-                  value: _harf2,
-                  hint: Text("ع"),
-                ),
-                DropdownButton(
-                  items: Veri.harf.map((String harf) {
-                    return DropdownMenuItem(
-                      value: harf,
-                      child: Text(
-                        harf,
-                        style: TextStyle(
-                          fontSize: 30.0,
-                          fontFamily: 'Lateef',
+                      );
+                    }).toList(),
+                    onChanged: (s) {
+                      _harf2 = s;
+                      setState(() {});
+                    },
+                    value: _harf2,
+                    hint: Text("ع"),
+                  ),
+                  DropdownButton(
+                    items: Veri.harf.map((String harf) {
+                      return DropdownMenuItem(
+                        value: harf,
+                        child: Text(
+                          harf,
+                          style: TextStyle(
+                            fontSize: 30.0,
+                            fontFamily: 'Lateef',
+                          ),
                         ),
-                      ),
-                    );
-                  }).toList(),
-                  onChanged: (s) {
-                    _harf3 = s;
-                    setState(() {});
-                  },
-                  value: _harf3,
-                  hint: Text("ل"),
-                ),
-                SizedBox(width: 12.0),
-                Text(": اختر الباب"),
-                SizedBox(width: 12.0),
-                DropdownButton(
-                  items: Veri.bab.map((String bab) {
-                    return DropdownMenuItem(
-                      value: bab,
-                      child: Text(
-                        bab,
-                        style: TextStyle(
-                          fontSize: 30.0,
-                          fontFamily: 'Lateef',
+                      );
+                    }).toList(),
+                    onChanged: (s) {
+                      _harf3 = s;
+                      setState(() {});
+                    },
+                    value: _harf3,
+                    hint: Text("ل"),
+                  ),
+                  SizedBox(width: 12.0),
+                  Text(": اختر الباب"),
+                  SizedBox(width: 12.0),
+                  DropdownButton(
+                    items: Veri.bab.map((String bab) {
+                      return DropdownMenuItem(
+                        value: bab,
+                        child: Text(
+                          bab,
+                          style: TextStyle(
+                            fontSize: 30.0,
+                            fontFamily: 'Lateef',
+                          ),
                         ),
-                      ),
-                    );
-                  }).toList(),
-                  onChanged: (s) {
-                    _bab = s;
-                    setState(() {});
-                  },
-                  value: _bab,
-                  hint: Text(_bab ?? Veri.bab[0]),
-                ),
-                SizedBox(width: 12.0),
-                Text(": اختر المصدر"),
-                SizedBox(width: 12.0),
-                DropdownButton(
-                  items: Veri.masdar.map((String masdar) {
-                    return DropdownMenuItem(
-                      value: masdar,
-                      child: Text(
-                        masdar,
-                        style: TextStyle(
-                          fontSize: 30.0,
-                          fontFamily: 'Lateef',
+                      );
+                    }).toList(),
+                    onChanged: (s) {
+                      _bab = s;
+                      setState(() {});
+                    },
+                    value: _bab,
+                    hint: Text(_bab ?? Veri.bab[0]),
+                  ),
+                  SizedBox(width: 12.0),
+                  Text(": اختر المصدر"),
+                  SizedBox(width: 12.0),
+                  DropdownButton(
+                    items: Veri.masdar.map((String masdar) {
+                      return DropdownMenuItem(
+                        value: masdar,
+                        child: Text(
+                          masdar,
+                          style: TextStyle(
+                            fontSize: 30.0,
+                            fontFamily: 'Lateef',
+                          ),
                         ),
-                      ),
-                    );
-                  }).toList(),
-                  onChanged: (s) {
-                    _masdar = s;
-                    setState(() {});
-                  },
-                  value: _masdar,
-                  hint: Text(_masdar ?? Veri.masdar[0]),
-                ),
-                SizedBox(height: 12.0),
-              ],
+                      );
+                    }).toList(),
+                    onChanged: (s) {
+                      _masdar = s;
+                      setState(() {});
+                    },
+                    value: _masdar,
+                    hint: Text(_masdar ?? Veri.masdar[0]),
+                  ),
+                  SizedBox(height: 12.0),
+                ],
+              ),
             ),
             SizedBox(width: 12.0),
           ],

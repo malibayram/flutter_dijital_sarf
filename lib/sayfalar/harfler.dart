@@ -1,5 +1,5 @@
-import 'package:dijital_sarf/veri/veri.dart';
-import 'package:flutter_web/material.dart';
+import '../veri/veri.dart';
+import 'package:flutter/material.dart';
 
 class Harfler extends StatefulWidget {
   @override
