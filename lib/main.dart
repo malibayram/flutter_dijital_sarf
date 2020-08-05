@@ -1,8 +1,8 @@
-import 'package:dijital_sarf/anasayfa.dart';
-import 'package:dijital_sarf/sayfalar/harekeler.dart';
-import 'package:dijital_sarf/sayfalar/harfler.dart';
-import 'package:dijital_sarf/sayfalar/muhtelife.dart';
-import 'package:flutter_web/material.dart';
+import 'anasayfa.dart';
+import 'sayfalar/harekeler.dart';
+import 'sayfalar/harfler.dart';
+import 'sayfalar/muhtelife.dart';
+import 'package:flutter/material.dart';
 //Süleyman Bal
 void main() => runApp(MyApp());
 

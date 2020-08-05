@@ -1,4 +1,4 @@
-import 'package:dijital_sarf/veri/kaliplar.dart';
+import 'kaliplar.dart';
 
 enum Kisim {
   SAHIH,

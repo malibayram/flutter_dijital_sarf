@@ -1,5 +1,5 @@
-import 'package:dijital_sarf/veri/veri.dart';
-import 'package:flutter_web/material.dart';
+import '../veri/veri.dart';
+import 'package:flutter/material.dart';
 
 class Muhtelife extends StatefulWidget {
   @override
@@ -16,9 +16,7 @@ class _MuhtelifeState extends State<Muhtelife> {
       ),
       body: Container(
         child: GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 4,
-          ),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
           itemCount: 24,
           itemBuilder: (ctx, i) {
             return Card(
